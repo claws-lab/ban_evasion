@@ -48,4 +48,26 @@
 		└── training_testing_sampling.py
 	```
 - `data` contains the raw data files used during the study
-	
+	```
+	data
+	├── task1
+	│   ├── task1_training_temp_samples.csv
+	│   ├── task1_testing_temp_samples.csv
+	│   ├── task1_positive_temp_samples.csv
+	│   ├── task1_negative_temp_samples.csv
+	├── task2
+	│   ├── task2_training_temp_samples.csv
+	│   ├── task2_testing_temp_samples.csv
+	│   ├── task2_positive_temp_samples.csv
+	│   ├── task2_negative_temp_samples.csv
+	├── task3a
+	│   ├── task3a_training_temp_samples.csv
+	│   ├── task3a_testing_temp_samples.csv
+	│   ├── task3a_positive_temp_samples.csv
+	│   ├── task3a_negative_temp_samples.csv
+	└── task3
+		├── task3b_training_temp_samples.csv
+		├── task3b_testing_temp_samples.csv
+		├── task3b_positive_temp_samples.csv
+		└── task3b_negative_temp_samples.csv
+	```
