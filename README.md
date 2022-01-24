@@ -1,52 +1,34 @@
-# Characterizing, Detecting, and Predicting Online Ban Evasion
-## Manoj Niverthi, Gaurav Verma, Srijan Kumar
-### A repository containing the code and data used in the study accepted at WWW 2022
+# Characterizing, Detecting, and Predicting Online Ban Evasion [[pdf]](TODO)
+## Authors: [Manoj Niverthi](TODO)\*, [Gaurav Verma](https://gaurav22verma.github.io/)\*, [Srijan Kumar](https://faculty.cc.gatech.edu/~srijan/) | ([CLAWS](http://claws.cc.gatech.edu/) @ [Georgia Tech](https://www.gatech.edu/))
+### Code and data used in the paper accepted at The ACM Web Conference (WWW 2022)
 
-## Code Structure
-- `code` contains the implementation of various scripts used during the study
-	```
-	code
-	├── task1
-	│   ├── analysis.py
-	│   ├── contrib_features_task1.py
-	│   ├── match_parent_blocked_users.py
-	│   ├── parents_per_neg_child.py
-	│   ├── scrape_edits_for_negative_samples.py
-	│   ├── successful_evaders.py
-	│   └── training_testing_sampling.py
-	├── task2
-	│   ├── analysis.py
-	│   ├── contrib_analysis_scores.py
-	│   ├── create_mismatched_samples.py
-	│   ├── match_parent_normal_users.py
-	│   ├── parents_per_neg_child.py
-	│   ├── scrape_edits_for_negative_samples.py
-	│   ├── scrape_normal_users.py
-	│   └── training_testing_sampling.py
-	└── task3
-		├── analysis.py
-		├── build_network.py
-		├── contrib_analysis_chart.py
-		├── contrib_analysis_scores.py
-		├── create_mismatched_samples.py
-		├── define_groups.py
-		├── define_pairs.py
-		├── filter_blocked_users.py
-		├── filter_pairs.py
-		├── find_neg_samples.py
-		├── get_puppetmasters.py
-		├── get_puppetmasters.pyc
-		├── get_user_contrib.py
-		├── group_stats.py
-		├── match_children_to_false_parents.py
-		├── match_socks_subcat.py
-		├── parents_per_neg_child.py
-		├── remove_matched_samples.py
-		├── scrape_negative_creation_times.py
-		├── scrape_negative_pairs.py
-		├── training_testing_datasets.py
-		└── training_testing_sampling.py
-	```
+Paper: [link](TODO)  
+Slides: [link](TODO)   
+Video: [link](TODO)  
+Bibtex: 
+```
+TODO
+```
+
+## Wikipedia Ban Evasion Dataset
+We curated a dataset comprising **8,551 ban evasion pairs on Wikipedia**, where each pair comprises a parent account and the child account. We adopt a strategy to ensure that there is a 1:1 mapping between parent and child accounts. For each of the accounts in these ban evasion pairs, we provide the following data:  
+* Wikipedia usernames, creation date, ban date, and other account-level meta-data
+* Corresponding edit information in form of revision IDs, pages edited, added text, deleted text, edit comment, and timestamp  
+
+The main dataset comprising these ban evasion pairs is stored in `./data/ban_evasion_pairs/`. The directory contains the meta-data about these pairs in the file named `evasion_pairs_meta.csv`, and the subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively. 
+
+## Lifecycle-based Matched Pairs
+
+Furthermore, to analyze the behavioral traits of ban evaders, we carefully constructed *'control groups'* to conduct controlled comparisons. We also refer to these pairs as 'matched pairs' in the paper. For each part of the ban evasion lifecycle that we are analyzing, we construct a new set of control users. 
+
+### Task 1: Evasion prediction
+The question is: whether we can distinguish a malicious parent account that is known to create an evasion account later on from a malicious account that does not create an evasion account. The control group here comprises malicious accounts that were banned around the same time as the the malicious parent. The dataset for this part of the lifecycle is included in `./data/task1/`. The directory contains the meta-data about the matched malicious accounts (along with the username of the true parent it was matched with) in the file names `task1_matched_pairs_meta.csv`. The subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each matched account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively.
+
+### Task 2: Early Evasion Detection 
+
+### Task 3: Ban-time Evasion Detection and Attribution
+
+
 - `data` contains the raw data files used during the study
 	```
 	data
