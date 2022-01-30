@@ -30,29 +30,4 @@ The relevant question for this task is: _given an account that was just created,
 ### Task 3: Ban-time Evasion Detection and Attribution
 In this task, we aim to find: _given an account that has been reported to engage in malicious activity, identify whether it is an evasion child account or an isolated account_. In the case that the account is an evasion account, we aim to formulate a related attribution task: _if the account is an evasion child account, identify its parent account_. In this pairwise task we had an experimental group of true ban evasion pairs and a control group of pairs that consisted of true ban evasion parents that were paired with non-evading malicious users (accounts that were banned but _not_ for instances of evasion) that were created at around the same time as the true ban evasion child. The dataset for this part of the lifecycle is included in `./data/task3a/`. The directory contains the meta-data about the matched malicious accounts (along with the username of the true parent it was matched with) in the file names `task3a_matched_pairs_meta.csv`. The subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each matched account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively.
 
-The attribution task was done exclusively among true ban evasion pairs. From within the set of true ban evasion pairs, we created artificial pairs by matching true ban evasion children with the 50 true ban evasion parents that were banned most closely to the child account's creation. We then had the model rank these accounts based on their class probability score produced by the classification model. The data for this task is in `./data/task3b/`, with the accounts being in the file `task3b_matched_pairs_meta.csv`. The subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each matched account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively. 
-
-- `data` contains the raw data files used during the study
-	```
-	data
-	├── task1
-	│   ├── task1_training_temp_samples.csv
-	│   ├── task1_testing_temp_samples.csv
-	│   ├── task1_positive_temp_samples.csv
-	│   ├── task1_negative_temp_samples.csv
-	├── task2
-	│   ├── task2_training_temp_samples.csv
-	│   ├── task2_testing_temp_samples.csv
-	│   ├── task2_positive_temp_samples.csv
-	│   ├── task2_negative_temp_samples.csv
-	├── task3a
-	│   ├── task3a_training_temp_samples.csv
-	│   ├── task3a_testing_temp_samples.csv
-	│   ├── task3a_positive_temp_samples.csv
-	│   ├── task3a_negative_temp_samples.csv
-	└── task3
-		├── task3b_training_temp_samples.csv
-		├── task3b_testing_temp_samples.csv
-		├── task3b_positive_temp_samples.csv
-		└── task3b_negative_temp_samples.csv
-	```
+The attribution task was done exclusively among true ban evasion pairs. From within the set of true ban evasion pairs, we created artificial pairs by matching true ban evasion children with the 50 true ban evasion parents that were banned most closely to the child account's creation. We then had the model rank these accounts based on their class probability score produced by the classification model. The data for this task is in `./data/task3b/`, with the accounts being in the file `task3b_matched_pairs_meta.csv`. The dataset used in this task corresponds to that of `./data/ban_evasion_pairs/` since we are just performing mismatching between true pairs.
