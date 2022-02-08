@@ -2,12 +2,16 @@
 ## Authors: [Manoj Niverthi](TODO)\*, [Gaurav Verma](https://gaurav22verma.github.io/)\*, [Srijan Kumar](https://faculty.cc.gatech.edu/~srijan/) | ([CLAWS](http://claws.cc.gatech.edu/) @ [Georgia Tech](https://www.gatech.edu/))
 ### Code and data used in the paper accepted at The ACM Web Conference (WWW 2022)
 
-Paper: [link](TODO)  
-Slides: [link](TODO)   
-Video: [link](TODO)  
-Bibtex: 
+Paper: [arXiv](TODO)  
+Slides: [soon](TODO)   
+Video: [soon](TODO)  
+BibTeX: 
 ```
-TODO
+@inproceedings{niverthi2022banevasion,
+  title={Characterizing, Detecting, and Predicting Online Ban Evasion},
+  author={Niverthi, Manoj and Verma, Gaurav and Kumar, Srijan},
+  booktitle={Proceedings of the Web Conference 2022},
+}
 ```
 
 ## Wikipedia Ban Evasion Dataset
