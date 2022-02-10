@@ -21,6 +21,8 @@ We curated a dataset comprising **8,551 ban evasion pairs on Wikipedia**, where 
 
 The main dataset comprising these ban evasion pairs is stored in `./data/ban_evasion_pairs/`. The directory contains the meta-data about these pairs in the file named `evasion_pairs_meta.csv`, and the subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively. 
 
+**Note**: Since the original dataset size is around 33 GiB (compressed in a .zip folder), we only share a very small fraction of the original data as sample here on GitHub. The complete dataset can be found at this [Dropbox link](todo). The full data is organized in the same manner as the sample provided here. Please contact the authors if you face any access issues. 
+
 ## Lifecycle-based Matched Pairs
 
 Furthermore, to analyze the behavioral traits of ban evaders, we carefully constructed *'control groups'* to conduct controlled comparisons. We also refer to these pairs as *'matched pairs'* in the paper. For each part of the ban evasion lifecycle that we are analyzing, we construct a new set of control users. 
