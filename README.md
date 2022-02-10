@@ -27,7 +27,7 @@ The main dataset comprising these ban evasion pairs is stored in `./final_data/b
 
 Furthermore, to analyze the behavioral traits of ban evaders, we carefully constructed *'control groups'* to conduct controlled comparisons. We also refer to these pairs as *'matched pairs'* in the paper. For each part of the ban evasion lifecycle that we are analyzing, we construct a new set of control users. 
 
-![Figure depicting ban evasion lifecycle and corresponding tasks](./lifecycle.PNG "Ban Evasion Lifecycle and Tasks")
+<center><img src="./lifecycle.PNG" width="700"></center>
 
 ### Task 1: Evasion prediction
 The question is: _whether we can distinguish a malicious parent account that is known to create an evasion account later on from a malicious account that does not create an evasion account_. The control group here comprises malicious accounts that were banned around the same time as the the malicious parent. The dataset for this part of the lifecycle is included in `./final_data/task1/`. The directory contains the meta-data about the matched malicious accounts (along with the username of the true parent it was matched with) in the file names `task1_matched_pairs_meta.csv`. The subdirectories `user_contribs/` and `revision_text/` contain the revision IDs for each matched account in the CSV and the revision content (i.e., pages edited, added text, deleted text, edit comment, and timestamp) for the revision IDs, respectively.
