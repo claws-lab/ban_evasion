@@ -1,8 +1,8 @@
-# Characterizing, Detecting, and Predicting Online Ban Evasion [[pdf]](TODO)
+# Characterizing, Detecting, and Predicting Online Ban Evasion [[pdf]](https://arxiv.org/pdf/2202.05257.pdf)
 ## Authors: [Manoj Niverthi](https://www.linkedin.com/in/manojniverthi)\*, [Gaurav Verma](https://gaurav22verma.github.io/)\*, [Srijan Kumar](https://faculty.cc.gatech.edu/~srijan/) | ([CLAWS](http://claws.cc.gatech.edu/) @ [Georgia Tech](https://www.gatech.edu/))
 ### Code and data used in the paper accepted at The ACM Web Conference (WWW 2022)
 
-Paper: [arXiv](TODO)  
+Paper: [arXiv](https://arxiv.org/abs/2202.05257)  
 Slides: [soon](TODO)   
 Video: [soon](TODO)  
 BibTeX: 
