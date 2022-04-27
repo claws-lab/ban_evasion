@@ -1,6 +1,7 @@
 # Characterizing, Detecting, and Predicting Online Ban Evasion 
 ## Authors: [Manoj Niverthi](https://www.linkedin.com/in/manojniverthi)\*, [Gaurav Verma](https://gaurav22verma.github.io/)\*, [Srijan Kumar](https://faculty.cc.gatech.edu/~srijan/) 
 ### Paper accepted at The ACM Web Conference (WWW 2022). [[PDF link here]](https://arxiv.org/pdf/2202.05257.pdf)
+### Check out the summary of work in this poster: [[PDF link here]](https://github.com/srijankr/ban_evasion/blob/main/OnlineBanEvasion_Summary.pdf)
 #### This repository has the code and data used in the paper. 
 
 <!-- Paper: [arXiv](https://arxiv.org/abs/2202.05257)   -->
@@ -15,8 +16,8 @@ BibTeX:
   year={2022}
 }
 ```
-
-<center><img src="./lifecycle.PNG" width="500"></center>
+<center><img src="./OnlineBanEvasion.png" width="1000"></center>
+<!-- <center><img src="./lifecycle.PNG" width="500"></center> -->
 
 ### Brief summary 
 Moderators and automated methods enforce bans on malicious users who engage in disruptive behavior. However, malicious users can easily create a new account to evade such bans. Previous research has focused on other forms of online deception, like the simultaneous operation of multiple accounts by the same entities (sockpuppetry), impersonation of other individuals, and studying the effects of de-platforming individuals and communities. In this paper, we conducted the first data-driven study of ban evasion, i.e., the act of circumventing bans on an online platform, leading to temporally disjoint operation of accounts by the same user. 
